@@ -1,27 +1,26 @@
 package com.example.Piano;
 
+import java.util.Objects;
+
 import javafx.animation.ScaleTransition;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.control.Slider;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 import javafx.scene.media.AudioClip;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import javafx.scene.control.Slider;
-import javafx.scene.control.ScrollPane;
-
-import javafx.scene.layout.VBox;
-
-import java.util.Objects;
 
 
 public class Piano extends Application {
 
-    private static final String[] NOTE_NAMES = {"C4","C4#","D4","D4#","E4","F4","F4#","G4","G4#","A4","A4#","B4","C5","C5#","D5","D5#","E5","F5","F5#","G5","G5#","A5","A5#","B5"};
-    private static final String[] NOTE_SOUNDS = {"C4.wav","C4#.wav","D4.wav","D4#.wav","E4.wav","F4.wav","F#4.wav","G4 .wav","G#4.wav","A4 .wav","A4#.wav","B4.wav","C5.wav","C5#.wav","D5.wav","D5#.wav","E5.wav","F5.wav","F5#.wav","G5.wav","G5#.wav","A5.wav","A5#.wav","B5.wav"};
+    //private static final String[] NOTE_NAMES = {"C4","C4#","D4","D4#","E4","F4","F4#","G4","G4#","A4","A4#","B4","C5","C5#","D5","D5#","E5","F5","F5#","G5","G5#","A5","A5#","B5"};
+    //private static final String[] NOTE_SOUNDS = {"C4.wav","C4#.wav","D4.wav","D4#.wav","E4.wav","F4.wav","F#4.wav","G4 .wav","G#4.wav","A4 .wav","A4#.wav","B4.wav","C5.wav","C5#.wav","D5.wav","D5#.wav","E5.wav","F5.wav","F5#.wav","G5.wav","G5#.wav","A5.wav","A5#.wav","B5.wav"};
 
     @Override
     public void start(Stage primaryStage){
