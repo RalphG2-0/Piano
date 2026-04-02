@@ -6,7 +6,9 @@ module com.example.Piano {
     requires org.kordamp.bootstrapfx.core;
     requires com.almasb.fxgl.all;
     requires javafx.media;
-    requires javafx.graphics;
+    //requires javafx.graphics;
+    requires transitive javafx.graphics;
+    requires transitive javafx.base;
     requires com.almasb.fxgl.core;
     requires com.almasb.fxgl.scene;
     requires com.almasb.fxgl.entity;
